@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Products | Amazon Warehouse</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="app-shell d-flex flex-column flex-lg-row">
+	<aside class="sidebar p-3 p-lg-4 d-none d-lg-block">
+		<a href="dashboard.html" class="brand d-flex align-items-center gap-2 fs-4 mb-4"><i class="bi bi-box-seam-fill text-amazon"></i> Warehouse</a>
+		<nav class="nav flex-column">
+			<a class="nav-link" href="dashboard.html"><i class="bi bi-speedometer2"></i> Dashboard</a>
+			<a class="nav-link active" href="products.html"><i class="bi bi-boxes"></i> Products</a>
+			<a class="nav-link" href="add-product.html"><i class="bi bi-plus-circle"></i> Add Product</a>
+			<a class="nav-link" href="orders.html"><i class="bi bi-receipt"></i> Orders</a>
+			<a class="nav-link" href="reports.html"><i class="bi bi-bar-chart-line"></i> Reports</a>
+			<a class="nav-link" href="profile.html"><i class="bi bi-person"></i> Profile</a>
+			<a class="nav-link" href="settings.html"><i class="bi bi-gear"></i> Settings</a>
+		</nav>
+	</aside>
+	<div class="main-content">
+		<header class="topbar px-3 px-lg-4 py-3 sticky-top">
+			<div class="d-flex align-items-center justify-content-between flex-wrap gap-3">
+				<div>
+					<nav aria-label="breadcrumb"><ol class="breadcrumb small mb-1"><li class="breadcrumb-item"><a href="dashboard.html">Home</a></li><li class="breadcrumb-item active">Products</li></ol></nav>
+					<h1 class="page-title h3 mb-0">Products List</h1>
+				</div>
+				<div class="d-flex gap-2 flex-wrap">
+					<div class="input-group">
+						<span class="input-group-text"><i class="bi bi-search"></i></span>
+						<input type="search" class="form-control" placeholder="Search product...">
+					</div>
+					<select class="form-select">
+						<option>All Categories</option><option>Electronics</option><option>Packaging</option><option>Warehouse Tools</option>
+					</select>
+					<a href="add-product.html" class="btn btn-amazon"><i class="bi bi-plus-lg"></i> Add Product</a>
+				</div>
+			</div>
+		</header>
+		<main class="p-3 p-lg-4">
+			<div class="panel-card p-4 mb-4">
+				<div class="row g-3 align-items-center">
+					<div class="col-lg-3"><label class="form-label">Status</label><select class="form-select"><option>All Status</option><option>In Stock</option><option>Low Stock</option><option>Out of Stock</option></select></div>
+					<div class="col-lg-3"><label class="form-label">Supplier</label><select class="form-select"><option>All Suppliers</option><option>North Supply</option><option>Prime Distributors</option></select></div>
+					<div class="col-lg-3"><label class="form-label">Sort By</label><select class="form-select"><option>Newest</option><option>Lowest Stock</option><option>Highest Value</option></select></div>
+					<div class="col-lg-3 d-flex gap-2 align-items-end">
+						<button class="btn btn-outline-amazon flex-grow-1">Reset</button>
+						<button class="btn btn-amazon flex-grow-1">Apply</button>
+					</div>
+				</div>
+			</div>
+			<div class="panel-card p-4">
+				<div class="d-flex justify-content-between align-items-center mb-3">
+					<h2 class="section-title mb-0">Inventory Table</h2>
+					<span class="badge badge-soft-info rounded-pill">1284 Records</span>
+				</div>
+				<div class="table-responsive">
+					<table class="table align-middle">
+						<thead>
+							<tr><th>SKU</th><th>Product</th><th>Category</th><th>Stock</th><th>Status</th><th>Price</th><th class="text-end">Action</th></tr>
+						</thead>
+						<tbody>
+							<tr><td>AW-1001</td><td>Barcode Scanner</td><td>Electronics</td><td>84</td><td><span class="badge badge-soft-success rounded-pill">In Stock</span></td><td>$120</td><td class="text-end"><a href="edit-product.html" class="btn btn-sm btn-outline-amazon">Edit</a></td></tr>
+							<tr><td>AW-1002</td><td>Packaging Tape</td><td>Packaging</td><td>12</td><td><span class="badge badge-soft-warning rounded-pill">Low Stock</span></td><td>$8</td><td class="text-end"><a href="edit-product.html" class="btn btn-sm btn-outline-amazon">Edit</a></td></tr>
+							<tr><td>AW-1003</td><td>Safety Gloves</td><td>Warehouse Tools</td><td>0</td><td><span class="badge badge-soft-danger rounded-pill">Out of Stock</span></td><td>$15</td><td class="text-end"><a href="edit-product.html" class="btn btn-sm btn-outline-amazon">Edit</a></td></tr>
+						</tbody>
+					</table>
+				</div>
+				<div class="d-flex justify-content-between align-items-center flex-wrap gap-3 mt-3">
+					<div class="muted-text">Showing 1 to 10 of 1284 entries</div>
+					<nav>
+						<ul class="pagination mb-0">
+							<li class="page-item disabled"><a class="page-link" href="#">Previous</a></li>
+							<li class="page-item active"><a class="page-link" href="#">1</a></li>
+							<li class="page-item"><a class="page-link" href="#">2</a></li>
+							<li class="page-item"><a class="page-link" href="#">3</a></li>
+							<li class="page-item"><a class="page-link" href="#">Next</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</main>
+	</div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

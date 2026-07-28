@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Order Details | Amazon Warehouse</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="app-shell d-flex flex-column flex-lg-row">
+	<aside class="sidebar p-3 p-lg-4 d-none d-lg-block">
+		<a href="dashboard.html" class="brand d-flex align-items-center gap-2 fs-4 mb-4"><i class="bi bi-box-seam-fill text-amazon"></i> Warehouse</a>
+		<nav class="nav flex-column">
+			<a class="nav-link" href="dashboard.html"><i class="bi bi-speedometer2"></i> Dashboard</a>
+			<a class="nav-link" href="orders.html"><i class="bi bi-receipt"></i> Orders</a>
+			<a class="nav-link active" href="order-details.html"><i class="bi bi-card-checklist"></i> Order Details</a>
+			<a class="nav-link" href="reports.html"><i class="bi bi-bar-chart-line"></i> Reports</a>
+			<a class="nav-link" href="profile.html"><i class="bi bi-person"></i> Profile</a>
+			<a class="nav-link" href="settings.html"><i class="bi bi-gear"></i> Settings</a>
+		</nav>
+	</aside>
+
+	<div class="main-content">
+		<header class="topbar px-3 px-lg-4 py-3 sticky-top">
+			<div class="d-flex align-items-center justify-content-between gap-3 flex-wrap">
+				<div>
+					<nav aria-label="breadcrumb"><ol class="breadcrumb small mb-1"><li class="breadcrumb-item"><a href="dashboard.html">Home</a></li><li class="breadcrumb-item"><a href="orders.html">Orders</a></li><li class="breadcrumb-item active">Order Details</li></ol></nav>
+					<h1 class="page-title h3 mb-0">Order #ORD-1001</h1>
+				</div>
+				<div class="d-flex gap-2 flex-wrap">
+					<button class="btn btn-outline-amazon"><i class="bi bi-printer"></i> Print</button>
+					<button class="btn btn-amazon"><i class="bi bi-check2-circle"></i> Mark Complete</button>
+				</div>
+			</div>
+		</header>
+
+		<main class="p-3 p-lg-4">
+			<div class="row g-4">
+				<div class="col-lg-8">
+					<div class="panel-card p-4 h-100">
+						<div class="d-flex justify-content-between align-items-center mb-3 flex-wrap gap-2">
+							<div>
+								<h2 class="section-title mb-1">Order Summary</h2>
+								<p class="muted-text mb-0">Dummy details for customer and shipping information.</p>
+							</div>
+							<span class="badge badge-soft-warning rounded-pill">Pending</span>
+						</div>
+						<div class="row g-3">
+							<div class="col-md-6"><div class="setting-item"><div class="small muted-text">Customer</div><div class="fw-semibold">Alpha Store</div></div></div>
+							<div class="col-md-6"><div class="setting-item"><div class="small muted-text">Order Date</div><div class="fw-semibold">25 July 2026</div></div></div>
+							<div class="col-md-6"><div class="setting-item"><div class="small muted-text">Status</div><div class="fw-semibold">Pending</div></div></div>
+							<div class="col-md-6"><div class="setting-item"><div class="small muted-text">Amount</div><div class="fw-semibold">$1,240</div></div></div>
+						</div>
+						<div class="table-responsive mt-4">
+							<table class="table align-middle">
+								<thead><tr><th>Item</th><th>Qty</th><th class="text-end">Price</th></tr></thead>
+								<tbody><tr><td>Barcode Scanner</td><td>8</td><td class="text-end">$960</td></tr><tr><td>Packaging Tape</td><td>35</td><td class="text-end">$280</td></tr></tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4">
+					<div class="panel-card p-4 h-100">
+						<h2 class="section-title mb-3">Actions</h2>
+						<div class="d-grid gap-2">
+							<button class="btn btn-amazon">Approve Order</button>
+							<button class="btn btn-outline-amazon">Send Invoice</button>
+							<button class="btn quick-action">Add Notes</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+	</div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

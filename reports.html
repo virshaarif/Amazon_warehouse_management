@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Reports | Amazon Warehouse</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="app-shell d-flex flex-column flex-lg-row">
+	<aside class="sidebar p-3 p-lg-4 d-none d-lg-block">
+		<a href="dashboard.html" class="brand d-flex align-items-center gap-2 fs-4 mb-4"><i class="bi bi-box-seam-fill text-amazon"></i> Warehouse</a>
+		<nav class="nav flex-column">
+			<a class="nav-link" href="dashboard.html"><i class="bi bi-speedometer2"></i> Dashboard</a>
+			<a class="nav-link" href="products.html"><i class="bi bi-boxes"></i> Products</a>
+			<a class="nav-link" href="orders.html"><i class="bi bi-receipt"></i> Orders</a>
+			<a class="nav-link active" href="reports.html"><i class="bi bi-bar-chart-line"></i> Reports</a>
+			<a class="nav-link" href="profile.html"><i class="bi bi-person"></i> Profile</a>
+			<a class="nav-link" href="settings.html"><i class="bi bi-gear"></i> Settings</a>
+		</nav>
+	</aside>
+
+	<div class="main-content">
+		<header class="topbar px-3 px-lg-4 py-3 sticky-top">
+			<div class="d-flex align-items-center justify-content-between gap-3 flex-wrap">
+				<div>
+					<nav aria-label="breadcrumb">
+						<ol class="breadcrumb small mb-1">
+							<li class="breadcrumb-item"><a href="dashboard.html">Home</a></li>
+							<li class="breadcrumb-item active">Reports</li>
+						</ol>
+					</nav>
+					<h1 class="page-title h3 mb-0">Profit, Loss & Wastage Reports</h1>
+				</div>
+				<div class="d-flex gap-2 flex-wrap">
+					<button class="btn btn-outline-amazon"><i class="bi bi-download"></i> Export</button>
+					<button class="btn btn-amazon"><i class="bi bi-funnel"></i> Filter</button>
+				</div>
+			</div>
+		</header>
+
+		<main class="p-3 p-lg-4">
+
+	<div class="row g-3 g-xl-4 mb-4">
+		<div class="col-6 col-xl-3">
+			<div class="panel-card p-4">
+				<div class="stat-label">Revenue</div>
+				<div class="stat-value">$89,420</div>
+				<span class="badge badge-soft-success rounded-pill">+12.4%</span>
+			</div>
+		</div>
+		<div class="col-6 col-xl-3">
+			<div class="panel-card p-4">
+				<div class="stat-label">Profit</div>
+				<div class="stat-value">$24,800</div>
+				<span class="badge badge-soft-success rounded-pill">Healthy</span>
+			</div>
+		</div>
+		<div class="col-6 col-xl-3">
+			<div class="panel-card p-4">
+				<div class="stat-label">Loss</div>
+				<div class="stat-value">$3,200</div>
+				<span class="badge badge-soft-danger rounded-pill">Needs review</span>
+			</div>
+		</div>
+		<div class="col-6 col-xl-3">
+			<div class="panel-card p-4">
+				<div class="stat-label">Wastage</div>
+				<div class="stat-value">96</div>
+				<span class="badge badge-soft-warning rounded-pill">Items</span>
+			</div>
+		</div>
+	</div>
+
+	<div class="row g-4">
+		<div class="col-lg-7">
+			<div class="panel-card p-4 h-100">
+				<div class="d-flex justify-content-between align-items-center mb-3">
+					<div>
+						<h2 class="section-title mb-1">Profit & Loss Report</h2>
+						<p class="muted-text mb-0">Dummy monthly figures for assignment presentation.</p>
+					</div>
+					<span class="badge badge-soft-info rounded-pill">Jan - Jul 2026</span>
+				</div>
+				<div class="chart-placeholder d-flex align-items-center justify-content-center text-center p-4 mb-4">
+					<div>
+						<i class="bi bi-graph-up-arrow fs-1 text-amazon"></i>
+						<div class="fw-semibold mt-2">Static chart placeholder</div>
+						<div class="small muted-text">You can keep this as a visual dummy chart.</div>
+					</div>
+				</div>
+				<div class="table-responsive">
+					<table class="table align-middle">
+						<thead>
+							<tr>
+								<th>Month</th>
+								<th>Revenue</th>
+								<th>Cost</th>
+								<th>Profit</th>
+								<th>Loss</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr><td>January</td><td>$12,500</td><td>$8,100</td><td><span class="badge badge-soft-success rounded-pill">$4,400</span></td><td>-$300</td></tr>
+							<tr><td>February</td><td>$13,200</td><td>$8,700</td><td><span class="badge badge-soft-success rounded-pill">$4,500</span></td><td>-$250</td></tr>
+							<tr><td>March</td><td>$14,100</td><td>$9,250</td><td><span class="badge badge-soft-success rounded-pill">$4,850</span></td><td>-$180</td></tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+
+		<div class="col-lg-5">
+			<div class="panel-card p-4 h-100">
+				<div class="d-flex justify-content-between align-items-center mb-3">
+					<div>
+						<h2 class="section-title mb-1">Wastage Report</h2>
+						<p class="muted-text mb-0">Dummy damaged, expired, and returned stock data.</p>
+					</div>
+					<span class="badge badge-soft-warning rounded-pill">96 items</span>
+				</div>
+
+				<div class="chart-placeholder d-flex align-items-center justify-content-center text-center p-4 mb-4" style="min-height: 180px;">
+					<div>
+						<i class="bi bi-trash3 fs-1 text-amazon"></i>
+						<div class="fw-semibold mt-2">Wastage summary area</div>
+						<div class="small muted-text">Use this as a visual placeholder.</div>
+					</div>
+				</div>
+
+				<div class="table-responsive">
+					<table class="table align-middle">
+						<thead>
+							<tr>
+								<th>Reason</th>
+								<th>Items</th>
+								<th class="text-end">Value</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr><td>Damaged</td><td>34</td><td class="text-end">$1,120</td></tr>
+							<tr><td>Expired</td><td>28</td><td class="text-end">$860</td></tr>
+							<tr><td>Returned</td><td>18</td><td class="text-end">$540</td></tr>
+							<tr><td>Missing</td><td>16</td><td class="text-end">$680</td></tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+		</main>
+	</div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

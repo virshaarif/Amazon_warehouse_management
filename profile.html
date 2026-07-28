@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Profile | Amazon Warehouse</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="app-shell d-flex flex-column flex-lg-row">
+	<aside class="sidebar p-3 p-lg-4 d-none d-lg-block">
+		<a href="dashboard.html" class="brand d-flex align-items-center gap-2 fs-4 mb-4"><i class="bi bi-box-seam-fill text-amazon"></i> Warehouse</a>
+		<nav class="nav flex-column">
+			<a class="nav-link" href="dashboard.html"><i class="bi bi-speedometer2"></i> Dashboard</a>
+			<a class="nav-link" href="products.html"><i class="bi bi-boxes"></i> Products</a>
+			<a class="nav-link" href="reports.html"><i class="bi bi-bar-chart-line"></i> Reports</a>
+			<a class="nav-link active" href="profile.html"><i class="bi bi-person"></i> Profile</a>
+			<a class="nav-link" href="settings.html"><i class="bi bi-gear"></i> Settings</a>
+		</nav>
+	</aside>
+
+	<div class="main-content">
+		<header class="topbar px-3 px-lg-4 py-3 sticky-top">
+			<div class="d-flex align-items-center justify-content-between flex-wrap gap-3">
+				<div>
+					<nav aria-label="breadcrumb">
+						<ol class="breadcrumb small mb-1">
+							<li class="breadcrumb-item"><a href="dashboard.html">Home</a></li>
+							<li class="breadcrumb-item active">User Profile</li>
+						</ol>
+					</nav>
+					<h1 class="page-title h3 mb-0">User Profile</h1>
+				</div>
+				<a href="settings.html" class="btn btn-outline-amazon"><i class="bi bi-gear"></i> Settings</a>
+			</div>
+		</header>
+
+		<main class="p-3 p-lg-4">
+			<div class="row g-4">
+				<div class="col-lg-4">
+					<div class="panel-card profile-summary p-4 h-100 text-center">
+						<div class="avatar-circle mx-auto mb-3">VA</div>
+						<h2 class="h4 mb-1">Virsha Arif</h2>
+						<p class="muted-text mb-3">CEO</p>
+						<div class="d-flex justify-content-between py-2 border-bottom"><span class="muted-text">Email</span><strong>virshaarif59@company.com</strong></div>
+						<div class="d-flex justify-content-between py-2 border-bottom"><span class="muted-text">Phone</span><strong>+923267938891</strong></div>
+						<div class="d-flex justify-content-between py-2"><span class="muted-text">Role</span><strong>Admin</strong></div>
+					</div>
+				</div>
+
+				<div class="col-lg-8">
+					<div class="panel-card p-4 p-lg-5">
+						<div class="d-flex justify-content-between align-items-center mb-4 flex-wrap gap-2">
+							<div>
+								<h2 class="section-title mb-1">Edit Profile</h2>
+								<p class="muted-text mb-0">Update your personal details and account preferences.</p>
+							</div>
+							<span class="badge badge-soft-info rounded-pill">Responsive form</span>
+						</div>
+
+						<form class="row g-3">
+							<div class="col-md-6">
+								<label class="form-label">Full Name</label>
+								<input class="form-control" value="Virsha Arif">
+							</div>
+							<div class="col-md-6">
+								<label class="form-label">Email</label>
+								<input class="form-control" value="virshaarif59@company.com">
+							</div>
+							<div class="col-md-6">
+								<label class="form-label">Phone</label>
+								<input class="form-control" value="+92 3267938891">
+							</div>
+							<div class="col-md-6">
+								<label class="form-label">Designation</label>
+								<select class="form-select">
+									<option>Founder & CEO</option>
+									<option>Manager</option>
+									<option>Operator</option>
+								</select>
+							</div>
+							<div class="col-12">
+								<label class="form-label">Bio</label>
+								<textarea class="form-control" rows="4">Managing warehouse operations, product flow, and reports from a simple frontend dashboard.</textarea>
+							</div>
+							<div class="col-12">
+								<div class="d-flex flex-wrap gap-2 justify-content-end">
+									<button class="btn btn-outline-amazon" type="button">Cancel</button>
+									<button class="btn btn-amazon" type="submit">Save Changes</button>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</main>
+	</div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

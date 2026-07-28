@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Signup | Amazon Warehouse</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body class="login-page">
+<div class="container-fluid">
+	<div class="row min-vh-100">
+		<div class="col-lg-6 login-left d-none d-lg-flex flex-column justify-content-between">
+			<div>
+				<span class="login-badge mb-4"><i class="bi bi-person-plus"></i> Create your account</span>
+				<h1 class="display-5 fw-bold lh-1">Set up your warehouse team access in minutes.</h1>
+				<p class="lead mt-4 text-white-50">Create a clean frontend registration flow for operators, managers, and admin users.</p>
+			</div>
+			<div class="row g-3">
+				<div class="col-6"><div class="p-3 rounded-4 bg-white bg-opacity-10 border border-white border-opacity-10"><div class="fw-semibold">Secure signup</div><div class="small text-white-50">Validation-ready form layout</div></div></div>
+				<div class="col-6"><div class="p-3 rounded-4 bg-white bg-opacity-10 border border-white border-opacity-10"><div class="fw-semibold">Team roles</div><div class="small text-white-50">For warehouse operations</div></div></div>
+			</div>
+		</div>
+		<div class="col-lg-6 d-flex align-items-center justify-content-center py-5">
+			<div class="login-card">
+				<div class="mb-4">
+					<span class="badge bg-amazon text-dark rounded-pill mb-3 px-3 py-2">Sign Up</span>
+					<h2 class="fw-bold mb-2">Create your account</h2>
+					<p class="muted-text mb-0">Register to access the warehouse dashboard.</p>
+				</div>
+				<form id="signupForm" class="needs-validation" novalidate>
+					<div class="row g-3">
+						<div class="col-md-6">
+							<label class="form-label">Full name</label>
+							<input type="text" class="form-control" placeholder="Virsha Arif" required>
+						</div>
+						<div class="col-md-6">
+							<label class="form-label">Role</label>
+							<select class="form-select" required>
+								<option value="">Select role</option>
+								<option>Admin</option>
+								<option>Manager</option>
+								<option>Operator</option>
+							</select>
+						</div>
+						<div class="col-12">
+							<label class="form-label">Email address</label>
+							<input type="email" class="form-control" placeholder="name@company.com" required>
+						</div>
+						<div class="col-md-6">
+							<label class="form-label">Password</label>
+							<input type="password" class="form-control" placeholder="Create password" required>
+						</div>
+						<div class="col-md-6">
+							<label class="form-label">Confirm password</label>
+							<input type="password" class="form-control" placeholder="Repeat password" required>
+						</div>
+						<div class="col-12">
+							<button type="submit" class="btn btn-amazon w-100 py-3 rounded-4">Create account</button>
+						</div>
+					</div>
+				</form>
+				<p class="text-center mt-4 auth-footer mb-0">Already have an account? <a href="login.html" class="fw-semibold">Login</a></p>
+			</div>
+		</div>
+	</div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
